@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png">
+    <script src="https://kit.fontawesome.com/bd9757e4e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/LogoImg.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Tomas</span> Jaggard</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------About me-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.jpeg" alt="Tomas Jaggard">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>A computer science graduate with a passion for coding & the blockchain development industry. Former content creator and competitive gamer who thrives at building strong
+                        community relations.
+                        </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('languages')">Languages</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="languages">
+                        <ul>
+                            <li><span>General Programming</span><br></li>
+                            <li>Python <span class="accent"><strong>/</strong></span> 3+ Years</li>
+                        </ul>
+                        <ul>
+                            <li><span>Web Development</span></li>
+                            <li>HTML <span class="accent"><strong>/</strong></span> 2+ Years</li>
+                            <li>CSS <span class="accent"><strong>/</strong></span> 6m+</li>
+                            <li>JavaScript <span class="accent"><strong>/</strong></span> 3m+</li>
+                            <li>Solidity <span class="accent"><strong>/</strong></span> 3m+</li>
+
+                        </ul>
+                        <ul>
+                            <li><span>App Development</span></li>
+                            <li>Swift <span class="accent"><strong>/</strong></span> 6m+</li>
+                            <li>SwiftUI <span class="accent"><strong>/</strong></span> 6m+</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Python Development</span><br>Designing scripts to increase working productivity</li>
+                            <li><span>Discord Bot Development</span><br>Building bespoke discord bots to enrich communities</li>
+                            <li><span>Web3 Project Development</span><br>Designing systems and tools to interact with the blockchain</li>
+                            <li><span>Web Development</span><br>Website/App Development</li>
+                            <li><span>Photoshop</span><br>Artwork and Editing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br><strong>Freelance Software Development</strong><br>Designing bespoke applications for clients</li>
+                            <li><span>Jan 2021 - Mar 2021</span><br><strong>Web Developer - Lordsmead Pre-School</strong><br>Maintained and upgraded company web pages</li>
+                            <li><span>2016 | 2018</span><br><strong>IT Support Placement - <em>Poly (Formerly Plantronics)</em></strong><br>Providing support for users within the company</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017 - 2019</span><br><strong>Level 3 IT Diploma</strong> <br>Wiltshire College</li>
+                            <li><span>2019 - 2022</span><br><strong>BSC Computer Science</strong><br>University of the West of England</li>
+                            <li><span>2022 - Current</span><br>Freelance Developer</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------Services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>App design</h2>
+                    <p>Designing bespoke applications</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-discord"></i>
+                    <h2>Discord bot development</h2>
+                    <p>Designing discord bots</p>
+                    <a href="https://discord.gg/29ayegMMCx" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h2>Web Design</h2>
+                    <p>Designing Websites using HTML/CSS/JS</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <!--------------------Portfolio-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Raffler.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Blockchain NFT Raffler<br>Discord Bot</h3>
+                        <p>NFT Raffler bots allow users to take part in exclusive giveaways hosted through Discord. </p>
+                        <a href="https://discord.gg/29ayegMMCx" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/SniperPass.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Cryptocurrency "Sniper" Bot</h3>
+                        <p>A python-based token sniper aiming to increase the users purchasing power.<br><br>Released alongside an NFT pass enabling access to the project.</p>
+                        <a href="https://opensea.io/collection/skys-sniper-pass" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-1">
+                    <div class="layer">
+                        <h3>App3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------------------Contact-------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> tomas@jaggard.net</p>
+                    <p><i class="fa-solid fa-phone"></i> 07484289141</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Tomasjaggard" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/TomasJaggard" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" class="btn btn2" Download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="email@example.com" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <footer>Copyright &copy; Tomas Jaggard 2023</footer>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
